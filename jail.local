@@ -1,0 +1,18 @@
+[ssh]
+enabled = true
+port = ssh
+logpath = %(sshd_log)s
+maxretry = 3
+bantime = 3600
+findtime = 600
+filter = sshd
+banaction = ufw-actions
+
+[sshd-auth]
+enabled = true
+port = ssh
+logpath = %(auth_log)s
+maxretry = 3
+bantime = 3600
+findtime = 600
+banaction = ufw-actions
