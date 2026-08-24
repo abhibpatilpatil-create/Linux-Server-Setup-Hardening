@@ -1,0 +1,9 @@
+# UFW application profile for Linux Server Hardening project
+# Usage: ufw app info "Linux Server Hardening"
+#        ufw allow "Linux Server Hardening"
+
+[application "Linux Server Hardening"]
+title=Linux Server Hardening Project
+description=UFW firewall configured for Linux server hardening project
+ports=22/tcp
+tags=tcp
